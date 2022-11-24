@@ -36,7 +36,7 @@ public class CardTest {
 
     @Test
     void shouldPositiveRequest ()  {
-        driver.get("http://localhost:9999");
+
         driver.findElement(By.cssSelector("[data-test-id=name] .input__control")).sendKeys("Екатерина Иванова");
         driver.findElement(By.cssSelector("[data-test-id=phone] .input__control")).sendKeys("+79818939922");
         driver.findElement(By.className("checkbox")).click();
